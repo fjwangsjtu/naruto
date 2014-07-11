@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Naruto</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_summary">人类就是这样，自以为自己知道了什么，就否定了自己不知道的东西，只会局限在自己的知识范围内自以为是.</string>
+    <string name="title_setting">系统设置</string>
+    <string name="title_feedback">用户反馈</string>
+    <string name="title_about">关于我们</string>
+    <string name="title_version">当前版本 : V</string>
+	<string name="search_label">搜索</string>
+	<string name="search_hint">鸣人</string>
+</resources>

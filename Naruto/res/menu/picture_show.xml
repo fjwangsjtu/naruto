@@ -1,0 +1,55 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_walpaper"
+        android:icon="@drawable/ic_action_content_picture"
+        android:showAsAction="always"
+        android:visible="true"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_action_content_save"
+        android:showAsAction="always"
+        android:visible="true"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_action_social_share"
+        android:showAsAction="always"
+        android:visible="true"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_action_core_overflow"
+        android:showAsAction="never"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_settings"
+                android:icon="@drawable/ic_action_device_access_brightness_low"
+                android:showAsAction="never"
+                android:title="@string/title_setting"
+                app:showAsAction="always">
+            </item>
+            <item
+                android:id="@+id/action_feedback"
+                android:icon="@drawable/ic_action_content_email"
+                android:showAsAction="never"
+                android:title="@string/title_feedback"
+                app:showAsAction="always">
+            </item>
+            <item
+                android:id="@+id/action_about"
+                android:icon="@drawable/ic_action_action_about"
+                android:showAsAction="never"
+                android:title="@string/title_about"
+                app:showAsAction="always">
+            </item>
+        </menu>
+    </item>
+
+</menu>

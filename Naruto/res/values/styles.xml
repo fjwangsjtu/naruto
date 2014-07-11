@@ -1,0 +1,52 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme.MainStyled" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">@drawable/actionbar_item_background</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+    </style>
+
+    <style name="Theme.Styled" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">@drawable/actionbar_item_background</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="homeAsUpIndicator">@drawable/actionbar_back_normal</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+    </style>
+
+    <style name="Theme.Styled.Overlay">
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@drawable/actionbar_backgroud</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="height">10dp</item>
+    </style>
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <!-- The textColor property is backward compatible with the Support Library -->
+    </style>
+
+</resources>

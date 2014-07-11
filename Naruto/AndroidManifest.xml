@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.bmob.naruto"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <permission
+        android:name="cn.bmob.permission.push"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="cn.bmob.permission.push" /> <!-- 添加自定义的权限 -->
+
+    <application
+        android:name="cn.bmob.naruto.MyAppApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.bmob.naruto.ui.MainActivitiy"
+            android:theme="@style/Theme.Styled"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bmob.naruto.ui.FlashActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.bmob.naruto.picture.AllPictureShowActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Styled" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="cn.bmob.naruto.search.SearchResultActivity" >
+        </activity>
+        <activity android:name="com.wxnys.webview.WebViewActivity" />
+
+        <!--
+        <service
+            android:name="cn.bmob.push.PushService"
+            android:exported="true"
+            android:label="PushService"
+            android:permission="cn.bmob.permission.push"
+            android:process="cn.bmob.push" >
+            <intent-filter>
+                <action android:name="cn.bmob.push.PushService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.bmob.push.PushReceiver"
+            android:process="cn.bmob.push" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.bmob.naruto.push.NarutoBmobPushMessageReceiver" >
+            <intent-filter>
+                <action android:name="cn.bmob.pushservice.action.MESSAGE" />
+            </intent-filter>
+        </receiver>
+        -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="a9316e2d60" />
+    </application>
+
+</manifest>
